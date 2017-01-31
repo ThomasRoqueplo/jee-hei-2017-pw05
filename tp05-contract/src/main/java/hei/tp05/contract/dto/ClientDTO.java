@@ -8,6 +8,14 @@ public class ClientDTO {
     private String nom;
     private String prenom;
 
+    public ClientDTO(String prenom, String nom) {
+        this.prenom = prenom;
+        this.nom = nom;
+    }
+
+    public ClientDTO() {
+    }
+
     public String getNom() {
         return nom;
     }

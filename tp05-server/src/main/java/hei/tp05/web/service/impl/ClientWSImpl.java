@@ -5,6 +5,7 @@ import hei.tp05.contract.facade.ClientWS;
 import hei.tp05.core.entity.Client;
 import hei.tp05.core.service.ClientService;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.jws.WebService;
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ import java.util.List;
 @Named("clientWS")
 @WebService(endpointInterface = "hei.tp05.contract.facade.ClientWS")
 public class ClientWSImpl implements ClientWS{
+    @Inject
     ClientService clientService;
 
     @Override
