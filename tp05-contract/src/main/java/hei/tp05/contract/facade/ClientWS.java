@@ -13,6 +13,6 @@ import java.util.List;
 public interface ClientWS {
 
     List<ClientDTO> getAllClients ();
-    void ClientDTO (ClientDTO client);
+    void saveClient (ClientDTO client);
 
 }
